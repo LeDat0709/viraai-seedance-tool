@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Dola logout guard",
+  "version": "1.0",
+  "description": "Chặn /passport/*/logout của Dola (Shark) để phiên nick không bị huỷ. Chrome tự chặn bằng luật DNR — không cần Playwright route/relay.",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["*://*.dola.com/*"],
+  "declarative_net_request": {
+    "rule_resources": [{"id": "logout", "enabled": true, "path": "rules.json"}]
+  }
+}

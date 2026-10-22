@@ -1,0 +1,12 @@
+node_modules/
+out/
+dist/
+*.tsbuildinfo
+.DS_Store
+__pycache__/
+*.pyc
+.env*
+.claude/settings.local.json
+
+# Cookie acc + key proxy thật (seed lúc khởi động), không đưa lên git
+src/main/local-seed/

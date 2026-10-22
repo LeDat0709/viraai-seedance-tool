@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {"type": "block"},
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9-]+\\.)*dola\\.com/passport/[^/]+/logout",
+      "resourceTypes": ["main_frame", "sub_frame", "xmlhttprequest", "ping", "other"]
+    }
+  }
+]
